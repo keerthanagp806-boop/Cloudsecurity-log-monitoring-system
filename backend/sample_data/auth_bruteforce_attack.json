@@ -1,0 +1,80 @@
+[
+  {
+    "timestamp": "2026-10-11T14:01:05Z",
+    "source": "authentication",
+    "source_system": "okta-idp",
+    "username": "sarah.connor",
+    "source_ip": "198.51.100.45",
+    "event_type": "login",
+    "action": "login_attempt",
+    "status": "failed",
+    "resource": "sso-portal",
+    "severity": "low",
+    "details": "Invalid password supplied"
+  },
+  {
+    "timestamp": "2026-10-11T14:01:22Z",
+    "source": "authentication",
+    "source_system": "okta-idp",
+    "username": "sarah.connor",
+    "source_ip": "198.51.100.45",
+    "event_type": "login",
+    "action": "login_attempt",
+    "status": "failed",
+    "resource": "sso-portal",
+    "severity": "low",
+    "details": "Invalid password supplied"
+  },
+  {
+    "timestamp": "2026-10-11T14:01:45Z",
+    "source": "authentication",
+    "source_system": "okta-idp",
+    "username": "sarah.connor",
+    "source_ip": "198.51.100.45",
+    "event_type": "login",
+    "action": "login_attempt",
+    "status": "failed",
+    "resource": "sso-portal",
+    "severity": "low",
+    "details": "Invalid password supplied"
+  },
+  {
+    "timestamp": "2026-10-11T14:02:10Z",
+    "source": "authentication",
+    "source_system": "okta-idp",
+    "username": "sarah.connor",
+    "source_ip": "198.51.100.45",
+    "event_type": "login",
+    "action": "login_attempt",
+    "status": "failed",
+    "resource": "sso-portal",
+    "severity": "medium",
+    "details": "Account lockout warning: threshold nearing"
+  },
+  {
+    "timestamp": "2026-10-11T14:02:35Z",
+    "source": "authentication",
+    "source_system": "okta-idp",
+    "username": "sarah.connor",
+    "source_ip": "198.51.100.45",
+    "event_type": "login",
+    "action": "login_attempt",
+    "status": "failed",
+    "resource": "sso-portal",
+    "severity": "high",
+    "details": "Brute-force attack pattern threshold exceeded (5 attempts)"
+  },
+  {
+    "timestamp": "2026-10-11T14:03:00Z",
+    "source": "authentication",
+    "source_system": "okta-idp",
+    "username": "sarah.connor",
+    "source_ip": "198.51.100.45",
+    "event_type": "login",
+    "action": "login_attempt",
+    "status": "failed",
+    "resource": "sso-portal",
+    "severity": "high",
+    "details": "Account locked due to repetitive failures"
+  }
+]

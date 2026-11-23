@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #0b0f19;
+    color: #e2e8f0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom Scrollbar for High-Tech SOC aesthetic */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+/* Cyber Glow Utilities */
+.glow-critical {
+  box-shadow: 0 0 15px rgba(239, 68, 68, 0.25);
+}
+
+.glow-high {
+  box-shadow: 0 0 15px rgba(245, 158, 11, 0.25);
+}
+
+.glow-cyan {
+  box-shadow: 0 0 15px rgba(6, 182, 212, 0.25);
+}
+
+.glow-blue {
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.25);
+}
+
+/* Glassmorphism panels */
+.soc-card {
+  background: rgba(17, 24, 39, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.soc-card-hover {
+  transition: all 0.2s ease-in-out;
+}
+
+.soc-card-hover:hover {
+  border-color: rgba(59, 130, 246, 0.4);
+  transform: translateY(-1px);
+}

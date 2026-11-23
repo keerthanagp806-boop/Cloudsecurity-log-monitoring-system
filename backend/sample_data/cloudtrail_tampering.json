@@ -1,0 +1,41 @@
+[
+  {
+    "timestamp": "2026-10-11T16:00:12Z",
+    "source": "cloud_audit",
+    "source_system": "aws-cloudtrail",
+    "username": "sec-ops-rogue",
+    "source_ip": "203.0.113.88",
+    "event_type": "security_tampering",
+    "action": "StopLogging",
+    "resource": "arn:aws:cloudtrail:us-east-1:123456789012:trail/prod-audit-trail",
+    "status": "success",
+    "severity": "critical",
+    "details": "CloudTrail management trail audit logging was stopped"
+  },
+  {
+    "timestamp": "2026-10-11T16:02:40Z",
+    "source": "network_security",
+    "source_system": "aws-vpc-flow",
+    "username": "sec-ops-rogue",
+    "source_ip": "203.0.113.88",
+    "event_type": "firewall_change",
+    "action": "AuthorizeSecurityGroupIngress",
+    "resource": "sg-0abcd1234ef567890",
+    "status": "success",
+    "severity": "critical",
+    "details": "Opened inbound port 22 and 3389 to 0.0.0.0/0 (Internet-wide exposed)"
+  },
+  {
+    "timestamp": "2026-10-11T16:05:00Z",
+    "source": "cloud_storage",
+    "source_system": "aws-s3",
+    "username": "sec-ops-rogue",
+    "source_ip": "203.0.113.88",
+    "event_type": "policy_change",
+    "action": "DeleteBucketEncryption",
+    "resource": "prod-customer-pii-vault",
+    "status": "success",
+    "severity": "critical",
+    "details": "Default server-side encryption disabled for bucket"
+  }
+]

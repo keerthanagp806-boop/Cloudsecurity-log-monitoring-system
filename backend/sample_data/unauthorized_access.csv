@@ -1,0 +1,5 @@
+timestamp,source,source_system,username,source_ip,event_type,action,resource,status,severity,details
+2026-10-11T17:15:10Z,cloud_storage,aws-s3,finance.intern,198.51.100.99,data_access,GetObject,arn:aws:s3:::corporate-payroll-2026/salaries.xlsx,failed,high,AccessDenied: User does not have s3:GetObject permission
+2026-10-11T17:15:45Z,cloud_storage,aws-s3,finance.intern,198.51.100.99,data_access,GetObject,arn:aws:s3:::corporate-payroll-2026/executive_bonus.csv,failed,high,AccessDenied: Explicit deny policy matched
+2026-10-11T17:16:30Z,secrets_manager,aws-secrets,finance.intern,198.51.100.99,secrets_access,GetSecretValue,arn:aws:secretsmanager:us-east-1:prod/stripe_api_key,failed,critical,AccessDenied: Role cannot decrypt secrets
+2026-10-11T17:17:10Z,cloud_storage,aws-s3,finance.intern,198.51.100.99,data_access,ListBucket,arn:aws:s3:::corporate-executive-vault,failed,high,AccessDenied: Unauthorized enumeration attempt

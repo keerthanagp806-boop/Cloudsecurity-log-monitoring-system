@@ -1,0 +1,5 @@
+timestamp,source,source_system,username,source_ip,event_type,action,resource,status,severity,details
+2026-10-11T15:10:00Z,cloud_iam,aws-iam,dev.contractor,192.0.2.78,authorization,role_modification,arn:aws:iam::123456789012:role/AdministratorAccess,success,critical,Contractor assigned AdministratorAccess policy
+2026-10-11T15:12:30Z,system,bastion-host,dev.contractor,192.0.2.78,privilege_escalation,sudo_exec,/bin/bash,success,high,User dev.contractor ran sudo /bin/bash via nopasswd
+2026-10-11T15:15:00Z,cloud_iam,aws-iam,dev.contractor,192.0.2.78,policy_change,attach_user_policy,AdministratorAccess,success,critical,Attached AdministratorAccess policy to ordinary dev user
+2026-10-11T15:18:22Z,cloud_security,aws-kms,dev.contractor,192.0.2.78,key_management,disable_key,arn:aws:kms:us-east-1:123456789012:key/production-db,success,high,KMS master encryption key disabled
